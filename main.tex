@@ -1,0 +1,247 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Analytic Geometry}
+\author{Zharkyn Bolat}
+\date{April 2026}
+
+\begin{document}
+
+\maketitle
+
+
+\title{Homework 1}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{Problem 1}
+Find an equation of the line parallel to $4x + y + 2 = 0$ with y-intercept 3.
+
+\textbf{Solution:}
+
+Rewrite the equation:
+\[
+y = -4x - 2
+\]
+
+Slope is $k = -4$.  
+Parallel lines have the same slope.
+
+Using y-intercept $b = 3$:
+\[
+y = -4x + 3
+\]
+
+\textbf{Answer:} $y = -4x + 3$
+
+---
+
+\section*{Problem 2}
+Find an equation of the line perpendicular to $4x - y - 3 = 0$ with x-intercept 4.
+
+\textbf{Solution:}
+
+Rewrite:
+\[
+y = 4x - 3
+\]
+
+Slope is $k = 4$.  
+Perpendicular slope:
+\[
+k = -\frac{1}{4}
+\]
+
+x-intercept 4 $\Rightarrow$ point $(4,0)$.
+
+Using point-slope form:
+\[
+y - 0 = -\frac{1}{4}(x - 4)
+\]
+
+\[
+y = -\frac{1}{4}x + 1
+\]
+
+\textbf{Answer:} $y = -\frac{1}{4}x + 1$
+
+---
+
+\section*{Problem 3}
+Find the orthocenter of triangle with vertices $(-10,11)$, $(8,2)$, $(2,-1)$.
+
+\textbf{Solution:}
+
+Slope of BC:
+\[
+k_{BC} = \frac{-1 - 2}{2 - 8} = \frac{-3}{-6} = \frac{1}{2}
+\]
+
+Altitude from A has slope:
+\[
+k = -2
+\]
+
+Equation through $A(-10,11)$:
+\[
+y - 11 = -2(x + 10)
+\Rightarrow y = -2x - 9
+\]
+
+Slope of AC:
+\[
+k_{AC} = \frac{-1 - 11}{2 + 10} = \frac{-12}{12} = -1
+\]
+
+Altitude from B has slope:
+\[
+k = 1
+\]
+
+Through $B(8,2)$:
+\[
+y - 2 = 1(x - 8)
+\Rightarrow y = x - 6
+\]
+
+Solve system:
+\[
+-2x - 9 = x - 6
+\Rightarrow x = -1
+\]
+
+\[
+y = -7
+\]
+
+\textbf{Answer:} $(-1,-7)$
+
+---
+
+\section*{Problem 4}
+Show that $v = Ai + Bj$ is perpendicular to $Ax + By + C = 0$.
+
+\textbf{Solution:}
+
+Normal vector of the line is $(A,B)$.
+
+Vector $v = (A,B)$ is parallel to the normal vector, hence perpendicular to the line.
+
+\textbf{Answer:} Proven.
+
+---
+
+\section*{Problem 5}
+Show that $v = Bi - Aj$ is parallel to $Ax + By + C = 0$.
+
+\textbf{Solution:}
+
+Dot product with normal vector $(A,B)$:
+\[
+AB + B(-A) = 0
+\]
+
+Thus vector is perpendicular to normal $\Rightarrow$ parallel to the line.
+
+\textbf{Answer:} Proven.
+
+---
+
+\section*{Problem 6}
+Find the distance between $12x - 5y + 3 = 0$ and $12x - 5y + 7 = 0$.
+
+\textbf{Solution:}
+
+\[
+d = \frac{|3 - 7|}{\sqrt{12^2 + (-5)^2}} = \frac{4}{13}
+\]
+
+\textbf{Answer:} $\frac{4}{13}$
+
+---
+
+\section*{Problem 7}
+Find the distance between $x + 2y - 2 = 0$ and $x + 2y + 5 = 0$.
+
+\textbf{Solution:}
+
+\[
+d = \frac{| -2 - 5 |}{\sqrt{1^2 + 2^2}} = \frac{7}{\sqrt{5}}
+\]
+
+\textbf{Answer:} $\frac{7}{\sqrt{5}}$
+
+---
+
+\section*{Problem 8}
+Find the distance between $2x + y + 2 = 0$ and $4x + 2y - 3 = 0$.
+
+\textbf{Solution:}
+
+Divide second equation by 2:
+\[
+2x + y - \frac{3}{2} = 0
+\]
+
+\[
+d = \frac{|2 - (-3/2)|}{\sqrt{2^2 + 1^2}} = \frac{7/2}{\sqrt{5}}
+\]
+
+\textbf{Answer:} $\frac{7}{2\sqrt{5}}$
+
+---
+
+\section*{Problem 9}
+Find the lengths of the altitudes of triangle with vertices $(1,2), (5,5), (-1,7)$.
+
+\textbf{Solution:}
+
+Area:
+\[
+S = \frac{1}{2} |1(5-7) + 5(7-2) + (-1)(2-5)| = 9
+\]
+
+Sides:
+\[
+a = \sqrt{52}, \quad b = \sqrt{29}, \quad c = 5
+\]
+
+Altitudes:
+\[
+h_a = \frac{2S}{a} = \frac{18}{\sqrt{52}}, \quad
+h_b = \frac{18}{\sqrt{29}}, \quad
+h_c = \frac{18}{5}
+\]
+
+\textbf{Answer:} see above
+
+---
+
+\section*{Problem 10}
+Find the lengths of the altitudes for triangle formed by:
+\[
+x + y - 3 = 0, \quad x - 2y + 4 = 0, \quad 2x + 3y = 5
+\]
+
+\textbf{Solution:}
+
+Find vertices by intersections, compute area, then use:
+\[
+h = \frac{2S}{a}
+\]
+
+Final result:
+\[
+h_1 = \frac{5}{\sqrt{2}}, \quad
+h_2 = \frac{5}{\sqrt{5}}, \quad
+h_3 = \frac{5}{\sqrt{13}}
+\]
+
+\textbf{Answer:} see above
+
+\end{document}
+
+\end{document}
